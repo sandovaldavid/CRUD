@@ -31,28 +31,29 @@ const crearNuevaLinea = (nombre, email, id) => {
         </td>`;
     linea.innerHTML = contenido;
     const btn = linea.querySelector("button");
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
         const id = btn.id;
-        clientServices
-            .eliminarCliente(id)
-            .then((respuesta) => {
-                console.log(respuesta);
-            })
-            .catch((error) => alert("Ocurrio un error"));
+        try {
+            clientServices.eliminarCliente(id);
+        } catch (error) {
+            window.location.href = "/screens/error.html";
+        }
     });
 
     return linea;
 };
 
 const table = document.querySelector("[data-table]");
-clientServices
-    .listaClientes()
-    .then((data) => {
-        data.forEach((perfil) => {
-            //{ nombre, email, id } -->tambien puede ser reemplazado por perfil
-            const { nombre, email, id } = perfil;
-            const nuevaLinea = crearNuevaLinea(nombre, email, id);
-            table.appendChild(nuevaLinea);
-        });
-    })
-    .catch((error) => alert("ocurrio un error"));
+
+const data = await clientServices.listaClientes();
+
+try {
+    data.forEach((perfil) => {
+        //{ nombre, email, id } -->tambien puede ser reemplazado por perfil
+        const { nombre, email, id } = perfil;
+        const nuevaLinea = crearNuevaLinea(nombre, email, id);
+        table.appendChild(nuevaLinea);
+    });
+} catch (error) {
+    window.location.href = "/screens/error.html";
+}
