@@ -7,8 +7,15 @@
 //Dlete     - DELETE
 
 //Fetch API
-const listaClientes = () =>
-    fetch("http://localhost:3000/perfil").then((respuesta) => respuesta.json());
+const listaClientes = async () => {
+    try {
+        fetch("http://localhost:3000/perfil").then((respuesta) =>
+            respuesta.json()
+        );
+    } catch (error) {
+        window.location.href = "/screens/error.html";
+    }
+};
 
 const crearCliente = (nombre, email) => {
     return fetch("http://localhost:3000/perfil", {
