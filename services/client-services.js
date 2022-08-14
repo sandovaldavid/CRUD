@@ -9,7 +9,7 @@
 //Fetch API
 const listaClientes = async () => {
     try {
-        fetch("http://localhost:3000/perfil").then((respuesta) =>
+        return fetch("http://localhost:3000/perfil").then((respuesta) =>
             respuesta.json()
         );
     } catch (error) {
