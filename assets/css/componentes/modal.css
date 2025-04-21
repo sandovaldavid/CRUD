@@ -28,6 +28,7 @@
 
 .modal__button {
 	font-size: var(--font-size-modal-button);
+	cursor: pointer;
 }
 
 .modal__text {
@@ -50,6 +51,7 @@
 	width: 1rem;
 	top: 1.75rem;
 	right: 1.75rem;
+	cursor: pointer;
 }
 
 .modal--close {
