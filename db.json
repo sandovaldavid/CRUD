@@ -1,14 +1,23 @@
 {
   "perfil": [
     {
-      "nombre": "wwwww",
-      "email": "dasdsadads",
-      "id": "07e6bfe0-63fe-4f09-8f68-a4f3bd9941ba"
+      "nombre": "User 01",
+      "email": "user_01@email.com",
+      "id": "d2b5d636-e818-4fd8-b552-9d686a92de3d"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Juguete para perro",
+      "precio": "15.99",
+      "descripcion": "Juguete de goma para masticar, ideal para perros pequeños y medianos.",
+      "id": "a3b0c8d9-1e2f-4g5h-6i7j-8k9l0m1n2o3p"
     },
     {
-      "nombre": "JUAN dasdasd",
-      "email": "vdsvsdfbvs",
-      "id": "50d946d6-bf4c-4fbd-b100-6001b6f21194"
+      "nombre": "Comida Premium",
+      "precio": "29.99",
+      "descripcion": "Alimento para perros adultos con vitaminas y minerales esenciales.",
+      "id": "b4c5d6e7-f8g9-h0i1-j2k3-l4m5n6o7p8q9"
     }
   ]
 }
