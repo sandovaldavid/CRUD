@@ -5,13 +5,6 @@ const REDIRECT_URL = './screens/lista_cliente.html';
 
 // Handle navigation highlighting
 document.addEventListener('DOMContentLoaded', () => {
-	// Highlight the Dashboard link as active
-	const dashboardLink = document.querySelector('.header__link:first-child a');
-	if (dashboardLink) {
-		dashboardLink.style.fontWeight = 'bold';
-		dashboardLink.style.color = 'var(--primary-color)';
-	}
-
 	// Set up the redirect if enabled
 	if (AUTO_REDIRECT) {
 		setTimeout(() => {
