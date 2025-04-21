@@ -1,29 +1,29 @@
 {
-  "name": "admin-crud",
-  "version": "2.0.0",
-  "description": "CRUD de Administradores",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "json-server --watch db.json",
-    "start": "browser-sync start --server --file . --host --port 5000 --startPath index.html --no-open",
-    "dev": "concurrently \"npm run server\" \"npm run start\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sandovaldavid/CRUD"
-  },
-  "keywords": [
-    "Alura"
-  ],
-  "author": "David Sandoval",
-  "license": "MIT",
-  "homepage": "https://github.com/sandovaldavid/CRUD#readme",
-  "dependencies": {
-    "json-server": "^0.17.4"
-  },
-  "devDependencies": {
-    "browser-sync": "^3.0.4",
-    "concurrently": "^8.2.2"
-  }
+	"name": "admin-crud",
+	"version": "2.0.0",
+	"description": "CRUD de Administradores",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "json-server --watch db.json",
+		"start": "browser-sync start --server --file . --host --port 5000 --startPath index.html --no-open",
+		"dev": "concurrently \"npm run server\" \"npm run start\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sandovaldavid/CRUD"
+	},
+	"keywords": [
+		"Alura"
+	],
+	"author": "David Sandoval",
+	"license": "MIT",
+	"homepage": "https://github.com/sandovaldavid/CRUD#readme",
+	"dependencies": {
+		"json-server": "^0.17.4"
+	},
+	"devDependencies": {
+		"browser-sync": "^3.0.4",
+		"concurrently": "^8.2.2"
+	}
 }
