@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Doguito Petshop | Admin</title>
+		<link rel="icon" href="./assets/img/doguitoadm.svg" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/css/base/base.css" />
+		<link rel="stylesheet" href="./assets/css/componentes/header.css" />
+		<link rel="stylesheet" href="./assets/css/componentes/card.css" />
+		<link rel="stylesheet" href="./assets/css/componentes/button.css" />
+		<link rel="stylesheet" href="./assets/css/index.css" />
+	</head>
+	<body>
+		<header class="header container">
+			<img src="./assets/img/doguitoadm.svg" alt="Logo Doguito" class="header__logo" />
+			<nav>
+				<ul class="header__list-nav">
+					<li class="header__link"><a href="./index.html">Dashboard</a></li>
+					<li class="header__link">
+						<a href="./screens/registrar_producto.html">Productos</a>
+					</li>
+					<li class="header__link">
+						<a href="./screens/lista_cliente.html">Clientes</a>
+					</li>
+					<li class="header__link"><a href="#">Pets</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="container">
+			<section class="welcome-container">
+				<img src="./assets/img/doguitoadm.svg" alt="Doguito Logo" class="welcome-logo" />
+				<h1 class="welcome-title">Bienvenido a Doguito Petshop Admin</h1>
+
+				<div class="card welcome-card">
+					<h2 class="card__title">Sistema de administración</h2>
+					<p>
+						Gestiona los clientes, productos y servicios de tu petshop en un solo lugar
+					</p>
+
+					<div class="feature-container">
+						<div class="card feature-card">
+							<h3 class="card__title">Clientes</h3>
+							<p>Administra tu base de clientes</p>
+						</div>
+
+						<div class="card feature-card">
+							<h3 class="card__title">Productos</h3>
+							<p>Gestiona el inventario de productos</p>
+						</div>
+
+						<div class="card feature-card">
+							<h3 class="card__title">Pets</h3>
+							<p>Controla información de mascotas</p>
+						</div>
+					</div>
+
+					<div class="button-container">
+						<a href="./screens/lista_cliente.html" class="button">Ver Clientes</a>
+						<a href="./screens/registrar_cliente.html" class="button"
+							>Registrar Cliente</a
+						>
+						<a href="./screens/registrar_producto.html" class="button"
+							>Registrar Producto</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script type="module" src="./controllers/index.controller.js"></script>
+	</body>
+</html>
