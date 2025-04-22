@@ -1,3 +1,5 @@
+import { config } from './config.js';
+
 //Abrir http (metodo, url);
 
 //CRUD      - Metodos HTTP
@@ -9,14 +11,14 @@
 //Fetch API
 const listaClientes = async () => {
 	try {
-		return fetch('http://localhost:3000/perfil').then((respuesta) => respuesta.json());
+		return fetch(`${config.API_BASE_URL}/perfil`).then((respuesta) => respuesta.json());
 	} catch (error) {
 		window.location.href = '/screens/error.html';
 	}
 };
 
 const crearCliente = (nombre, email) => {
-	return fetch('http://localhost:3000/perfil', {
+	return fetch(`${config.API_BASE_URL}/perfil`, {
 		method: 'POST',
 		headers: {
 			'content-type': 'application/json',
@@ -26,17 +28,17 @@ const crearCliente = (nombre, email) => {
 };
 
 const eliminarCliente = (id) => {
-	return fetch(`http://localhost:3000/perfil/${id}`, {
+	return fetch(`${config.API_BASE_URL}/perfil/${id}`, {
 		method: 'DELETE',
 	});
 };
 const detalleCliente = (id) => {
-	return fetch(`http://localhost:3000/perfil/${id}`).then((respuesta) => respuesta.json());
+	return fetch(`${config.API_BASE_URL}/perfil/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarCliente = async (nombre, email, id) => {
 	try {
-		return fetch(`http://localhost:3000/perfil/${id}`, {
+		return fetch(`${config.API_BASE_URL}/perfil/${id}`, {
 			method: 'PUT',
 			headers: {
 				'content-type': 'application/json',
