@@ -1,176 +1,229 @@
-# Doguito Petshop Admin 🐶
+# 🐶 Doguito Petshop Admin
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)
-[![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black.svg?style=flat-square&logo=vercel)](https://crud-liart.vercel.app/)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
+[![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black.svg?style=for-the-badge&logo=vercel)](https://crud-liart.vercel.app/)
+[![API Status](https://img.shields.io/badge/API-online-success.svg?style=for-the-badge&logo=render)](https://crud-api-emg1.onrender.com/)
 
-Sistema de administración completo para una tienda de mascotas, que permite gestionar clientes,
-productos y mascotas.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-[Ver Demo](https://doguito.devsandoval.me/) | [Ver API Demo](https://crud-api-emg1.onrender.com/)
+<h3>✨ Sistema de administración completo para una tienda de mascotas</h3>
+<p>Una solución integral para gestionar clientes, productos y mascotas</p>
+
+<br>
+
+[🚀 Ver Demo](https://doguito.devsandoval.me/) | [🔧 API Demo](https://crud-api-emg1.onrender.com/)
 
 </div>
 
-## 🖼️ Demo
+<hr>
+
+## 📱 Demo Interactivo
 
 <div align="center">
    <img src="./assets/img/mockup/desktop.png" alt="Doguito Petshop Admin Demo" width="800"/>
 </div>
 
-## ✨ Características
+## ✅ Características Principales
 
--   📝 **CRUD completo:** Creación, lectura, actualización y eliminación de registros
--   👤 Gestión de clientes
--   🛍️ Gestión de productos
--   🐾 Gestión de mascotas
--   🔔 Confirmaciones mediante modales
--   🌐 Configuración flexible para despliegue en diferentes entornos
--   🔄 Variables de entorno para fácil migración entre desarrollo y producción
+<table>
+  <tr>
+    <td>
+      <h3>📋 Gestión Completa</h3>
+      <ul>
+        <li>✅ CRUD completo y optimizado</li>
+        <li>✅ Validación de formularios</li>
+        <li>✅ Notificaciones interactivas</li>
+      </ul>
+    </td>
+    <td>
+      <h3>👤 Clientes</h3>
+      <ul>
+        <li>✅ Agregar nuevos clientes</li>
+        <li>✅ Actualizar información</li>
+        <li>✅ Gestión de cuentas</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🛍️ Productos</h3>
+      <ul>
+        <li>✅ Catálogo de productos</li>
+        <li>✅ Precio y descripciones</li>
+        <li>✅ Gestión de inventario</li>
+      </ul>
+    </td>
+    <td>
+      <h3>🐾 Mascotas</h3>
+      <ul>
+        <li>✅ Registro de mascotas</li>
+        <li>✅ Asociación con dueños</li>
+        <li>✅ Historial completo</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-## 🚀 Tecnologías utilizadas
+## 🔧 Tecnologías Utilizadas
 
--   **Frontend:**
-    -   HTML5, CSS3, JavaScript (ES6+)
-    -   Módulos ES6
-    -   Diseño responsivo
--   **Backend:**
+<div align="center">
 
-    -   API REST con json-server
-    -   Node.js para el servidor en producción
+### 🌐 Frontend
 
--   **Herramientas:**
-    -   Vercel para despliegue
-    -   npm para gestión de paquetes
-    -   Git para control de versiones
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![ES Modules](https://img.shields.io/badge/ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Responsive Design](https://img.shields.io/badge/Responsive_Design-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 
-## 💻 Instalación y Desarrollo Local
+### ⚙️ Backend
 
-1. **Clona este repositorio**
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![JSON Server](https://img.shields.io/badge/JSON_Server-000000?style=flat-square&logo=json&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-FF6C37?style=flat-square&logo=postman&logoColor=white)
 
-    ```bash
-    git clone https://github.com/sandovaldavid/CRUD.git
-    cd CRUD
-    ```
+### 🛠️ Herramientas
 
-2. **Instala las dependencias**
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)
+![NPM](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-    ```bash
-    npm install
-    ```
+</div>
 
-3. **Ejecuta el entorno de desarrollo**
-    ```bash
-    npm run dev
-    ```
-    Esto iniciará:
-    - El servidor json-server en http://localhost:3000
-    - El servidor de desarrollo browser-sync en http://localhost:5000
-
-## 🌐 Despliegue en producción
-
-### Frontend (Archivos estáticos)
-
-Puedes desplegar el frontend en servicios como GitHub Pages, Netlify o Vercel.
-
-1. **Genera los archivos de distribución:**
-
-    ```bash
-    npm run build
-    ```
-
-2. **Los archivos estarán en la carpeta `dist/` listos para ser desplegados.**
-
-#### Opción 1: Despliegue rápido para pruebas
+## 💻 Instalación Rápida
 
 ```bash
-npm run deploy:frontend
+# 1. Clona el repositorio
+git clone https://github.com/sandovaldavid/CRUD.git
+cd CRUD
+
+# 2. Instala las dependencias
+npm install
+
+# 3. Inicia el entorno de desarrollo
+npm run dev
 ```
 
-#### Opción 2: Despliegue en Vercel (Recomendado)
+### 🚀 Servidor de desarrollo
 
-1. Sube tu proyecto a GitHub
-2. Crea una cuenta en [Vercel](https://vercel.com)
-3. Importa tu repositorio de GitHub
-4. Vercel detectará automáticamente la configuración gracias al archivo `vercel.json`
-5. Haz clic en "Deploy" y tu aplicación estará lista
+-   🔌 **API**: http://localhost:3000
+-   🌐 **Frontend**: http://localhost:5000
 
-#### Opción 3: GitHub Pages
+## 🔄 Flujo de trabajo
 
-1. Configura tu repositorio para GitHub Pages
-2. Despliega la carpeta `dist` siguiendo
-   [estas instrucciones](https://docs.github.com/es/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+```mermaid
+flowchart TD
+    A[Cliente] -->|Accede| B[Dashboard]
+    B --> C{Selecciona módulo}
+    C -->|Clientes| D[Gestión de Clientes]
+    C -->|Productos| E[Gestión de Productos]
+    C -->|Mascotas| F[Gestión de Mascotas]
+    D --> G[CRUD Clientes]
+    E --> H[CRUD Productos]
+    F --> I[CRUD Mascotas]
+    G --> J[Confirmación]
+    H --> J
+    I --> J
+```
 
-#### Opción 4: Netlify
+## 🌐 Despliegue
 
-1. Conecta tu repositorio a Netlify
-2. Configura el comando de build como `npm run build`
-3. Configura el directorio de publicación como `dist`
+<table>
+  <tr>
+    <th>📱 Frontend</th>
+    <th>⚙️ Backend (API)</th>
+  </tr>
+  <tr>
+    <td>
+      <h4>Vercel (Recomendado)</h4>
+      <ol>
+        <li>Conecta tu repo de GitHub a Vercel</li>
+        <li>Vercel detectará la configuración automáticamente</li>
+        <li>Despliega con un solo click</li>
+      </ol>
+    </td>
+    <td>
+      <h4>Render</h4>
+      <ol>
+        <li>Crea un Web Service en Render</li>
+        <li>Configura: <code>npm install</code> como Build Command</li>
+        <li>Configura: <code>npm run deploy:backend</code> como Start Command</li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>Netlify</h4>
+      <ol>
+        <li>Conecta tu repositorio</li>
+        <li>Build command: <code>npm run build</code></li>
+        <li>Publish directory: <code>dist</code></li>
+      </ol>
+    </td>
+    <td>
+      <h4>Railway</h4>
+      <ol>
+        <li>Conecta tu repositorio a Railway</li>
+        <li>Railway detectará el <code>package.json</code></li>
+        <li>Usará <code>npm run deploy:backend</code> automáticamente</li>
+      </ol>
+    </td>
+  </tr>
+</table>
 
-### Backend (API REST)
+## 📖 Documentación
 
-Si despliegas en Vercel usando nuestro archivo de configuración, ¡no necesitas desplegar el backend
-por separado! Todo funcionará desde la misma URL base.
+Para obtener más información sobre el proyecto, consulta:
 
-Para otros servicios, puedes desplegar el backend (json-server) en:
+-   [📝 Notas de lanzamiento (v2.0.0)](#)
+-   [🔧 API Endpoints](https://crud-api-emg1.onrender.com/)
 
-#### Despliegue en Render
+## 🤝 Contribución
 
-1. Crea una cuenta en [Render](https://render.com/)
-2. Crea un nuevo Web Service
-3. Conecta con tu repositorio de GitHub
-4. Configura:
-    - Build Command: `npm install`
-    - Start Command: `npm run deploy:backend`
+¿Quieres contribuir? ¡Genial! Sigue estos pasos:
 
-#### Despliegue en Railway
+1. 🍴 Haz un Fork del proyecto
+2. 🔧 Crea una rama para tu función (`git checkout -b feature/amazing-feature`)
+3. 💻 Realiza tus cambios y haz commit (`git commit -m 'Add amazing feature'`)
+4. 📤 Sube los cambios (`git push origin feature/amazing-feature`)
+5. 📩 Abre un Pull Request
 
-1. Crea una cuenta en [Railway](https://railway.app/)
-2. Crea un nuevo proyecto desde GitHub
-3. Agrega tu repositorio
-4. Railway detectará automáticamente el `package.json` y usará `npm run deploy:backend`
+## 🚧 Próximos pasos
 
-### Conectar Frontend con Backend desplegado
-
-Una vez desplegado, puedes cambiar la URL de la API usando la página de configuración incluida en la
-aplicación.
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Haz un Fork del proyecto
-2. Crea una rama para tu función (`git checkout -b feature/amazing-feature`)
-3. Realiza tus cambios y haz commit (`git commit -m 'Add amazing feature'`)
-4. Sube los cambios (`git push origin feature/amazing-feature`)
-5. Abre un Pull Request
-
-## ⚡ Feature
-
-[ ] 📱 Interfaz responsiva y amigable
+-   [ ] 📱 Interfaz responsiva mejorada para dispositivos móviles
+-   [ ] 🌙 Modo oscuro
+-   [ ] 🔍 Búsqueda avanzada en listas
+-   [ ] 📊 Panel de estadísticas
 
 ## 📄 Licencia
 
+<div align="center">
+
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+</div>
 
 ---
 
 ## 👨‍💻 Autor
 
-### [David Sandoval](https://github.com/sandovaldavid)
+<div align="center">
+  <img src="https://github.com/sandovaldavid.png" width="100px" style="border-radius: 50%;">
+  <h3>David Sandoval</h3>
 
--   🌐 Portafolio: [devsandoval.me](https://devsandoval.me)
--   💼 LinkedIn: [@devsandoval](https://linkedin.com/in/devsandoval)
--   💻 GitHub: [@sandovaldavid](https://github.com/sandovaldavid)
--   📧 Email: [contact@devsandoval.me](mailto:contact@devsandoval.me)
+[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://devsandoval.me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/devsandoval)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandovaldavid)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@devsandoval.me)
 
----
-
-Desarrollado por [@sandovaldavid](https://github.com/sandovaldavid)
+</div>
 
 ---
 
