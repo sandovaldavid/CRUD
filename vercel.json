@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "assets/**", "use": "@vercel/static" },
+    { "src": "controllers/**", "use": "@vercel/static" },
+    { "src": "screens/**", "use": "@vercel/static" },
+    { "src": "services/**", "use": "@vercel/static" },
+    { "src": "server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/server.js" },
+    { "handle": "filesystem" },
+    { "src": "/screens/(.*)", "dest": "/screens/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
