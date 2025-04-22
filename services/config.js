@@ -14,12 +14,10 @@ if (storedApiUrl) {
 	API_BASE_URL = storedApiUrl;
 }
 
-// Si estamos en producción y no hay una URL personalizada, usar la URL actual con /api
+// Si estamos en producción y no hay una URL personalizada, sugerir una URL de producción
 if (isProduction && !storedApiUrl) {
-	// En Vercel, la API estará en el mismo dominio pero bajo la ruta /api
-	const protocol = window.location.protocol;
-	const hostname = window.location.hostname;
-	API_BASE_URL = `${protocol}//${hostname}/api`;
+	// Actualizado para usar la URL directa sin /api
+	API_BASE_URL = 'https://crud-api-emg1.onrender.com';
 
 	// Almacenar para futuras cargas de página
 	localStorage.setItem('API_BASE_URL', API_BASE_URL);
