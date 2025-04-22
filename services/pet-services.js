@@ -1,14 +1,16 @@
+import { config } from './config.js';
+
 // Pets service for handling pet CRUD operations
 const listaPets = async () => {
 	try {
-		return fetch('http://localhost:3000/pets').then((respuesta) => respuesta.json());
+		return fetch(`${config.API_BASE_URL}/pets`).then((respuesta) => respuesta.json());
 	} catch (error) {
 		window.location.href = '/screens/error.html';
 	}
 };
 
 const crearPet = (nombre, edad, raza, dueno) => {
-	return fetch('http://localhost:3000/pets', {
+	return fetch(`${config.API_BASE_URL}/pets`, {
 		method: 'POST',
 		headers: {
 			'content-type': 'application/json',
@@ -24,18 +26,18 @@ const crearPet = (nombre, edad, raza, dueno) => {
 };
 
 const eliminarPet = (id) => {
-	return fetch(`http://localhost:3000/pets/${id}`, {
+	return fetch(`${config.API_BASE_URL}/pets/${id}`, {
 		method: 'DELETE',
 	});
 };
 
 const detallePet = (id) => {
-	return fetch(`http://localhost:3000/pets/${id}`).then((respuesta) => respuesta.json());
+	return fetch(`${config.API_BASE_URL}/pets/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarPet = async (nombre, edad, raza, dueno, id) => {
 	try {
-		return fetch(`http://localhost:3000/pets/${id}`, {
+		return fetch(`${config.API_BASE_URL}/pets/${id}`, {
 			method: 'PUT',
 			headers: {
 				'content-type': 'application/json',
