@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Doguito Petshop | Clientes</title>
+		<link rel="icon" href="../assets/img/doguitoadm.svg" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+		<link rel="stylesheet" href="../assets/css/base/base.css" />
+		<link rel="stylesheet" href="../assets/css/componentes/header.css" />
+		<link rel="stylesheet" href="../assets/css/lista_cliente.css" />
+		<link rel="stylesheet" href="../assets/css/componentes/table.css" />
+		<link rel="stylesheet" href="../assets/css/componentes/button.css" />
+		<link rel="stylesheet" href="../assets/css/componentes/modal.css" />
+		<link rel="stylesheet" href="../assets/css/componentes/footer.css" />
+	</head>
+	<body>
+		<header class="header container">
+			<img src="../assets/img/doguitoadm.svg" alt="Logotipo Doguito" class="header__logo" />
+			<nav>
+				<ul class="header__list-nav">
+					<li class="header__link"><a href="../index.html">Dashboard</a></li>
+					<li class="header__link"><a href="./lista_products.html">Productos</a></li>
+					<li class="header__link active"><a href="./lista_cliente.html">Clientes</a></li>
+					<li class="header__link"><a href="./lista_pets.html">Pets</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="clientes-container">
+			<table class="table">
+				<thead>
+					<tr>
+						<th class="table__column--p">Nombre</th>
+						<th class="table__column--g">Email</th>
+						<th class="table__column--m table__align--right">
+							<a
+								href="./registrar_cliente.html"
+								class="simple-button simple-button--add"
+								>Nuevo Cliente</a
+							>
+						</th>
+					</tr>
+				</thead>
+				<tbody data-table></tbody>
+			</table>
+			<div class="modal-container modal--close">
+				<article class="modal">
+					<h2 class="modal__title">Eliminar</h2>
+					<button class="modal__close">X</button>
+					<p class="modal__text">¿Deseas continuar?</p>
+					<div class="modal__button-container">
+						<button class="modal__button modal__button--confirm">Eliminar</button>
+						<button class="modal__button">No eliminar</button>
+					</div>
+				</article>
+			</div>
+		</main>
+
+		<footer class="app-footer">
+			<div class="footer-content">
+				<div class="footer-info">
+					<div class="footer-logo">
+						<img
+							src="../assets/img/doguitoadm.svg"
+							alt="doguito_logo"
+							class="footer-logo-img" />
+						<h3>Doguito</h3>
+					</div>
+					<p>
+						Gestiona los clientes, productos y servicios de tu petshop en un solo lugar
+					</p>
+					<div class="disclaimer-message">
+						<i class="fas fa-lock"></i>
+						<p>Este proyecto es educativo y forma parte de mi portafolio personal.</p>
+					</div>
+				</div>
+
+				<div class="footer-links">
+					<h4>Portafolio</h4>
+					<ul>
+						<li>
+							<!-- Change link and redirect to my portfolio/projects -->
+							<a
+								href="https://github.com/stars/sandovaldavid/lists/portforlio-projects"
+								class="footer-link"
+								target="_blank"
+								><i class="fab fa-github"></i> Mis Proyectos</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/sandovaldavid/CRUD"
+								class="footer-link"
+								target="_blank"
+								><i class="fas fa-code"></i> Código Fuente</a
+							>
+						</li>
+						<li>
+							<a href="https://devsandoval.me/es/" class="footer-link" target="_blank"
+								><i class="fa-solid fa-globe"></i>Portafolio</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-social">
+					<h4>Contacto</h4>
+					<div class="social-icons">
+						<a
+							href="https://github.com/sandovaldavid"
+							class="social-icon"
+							target="_blank"
+							><i class="fab fa-github"></i
+						></a>
+						<a
+							href="https://linkedin.com/in/devsandoval"
+							class="social-icon"
+							target="_blank"
+							><i class="fab fa-linkedin-in"></i
+						></a>
+						<a href="mailto:contact@devsandoval.me" class="social-icon" target="_blank"
+							><i class="fas fa-envelope"></i
+						></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>
+					&copy; 2025 Doguito | Desarrollado por
+					<!-- Change link and redirect to my portfolio -->
+					<a href="https://github.com/sandovaldavid">@sandovaldavid</a>
+				</p>
+			</div>
+		</footer>
+
+		<script type="module" src="../controllers/client.controller.js"></script>
+	</body>
+</html>
