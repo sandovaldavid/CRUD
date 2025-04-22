@@ -31,3 +31,9 @@
 .simple-button--edit {
 	color: var(--sucess-color);
 }
+
+#apiurl__options {
+	justify-content: space-between;
+	margin-top: 20px;
+	gap: 3rem;
+}
