@@ -182,7 +182,7 @@ flowchart TD
 
 Para obtener más información sobre el proyecto, consulta:
 
--   [📝 Notas de lanzamiento (v2.0.0)](#)
+-   [📝 Notas de lanzamiento (v2.0.0)](https://github.com/sandovaldavid/CRUD/releases/tag/v2.0.0)
 -   [🔧 API Endpoints](https://crud-api-emg1.onrender.com/)
 
 ## 🤝 Contribución
